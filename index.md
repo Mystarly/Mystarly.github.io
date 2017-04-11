@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/Mystarly/Mystarly.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+啦啦啦，这个页面还刚刚诞生，所以没什么内容~这几天抽空写点东西~
 
 ### Markdown
 
