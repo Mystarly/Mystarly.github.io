@@ -1,10 +1,9 @@
 ## Welcome to Yang's Pages
 
-You can use the [editor on GitHub](https://github.com/Mystarly/Mystarly.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This is my personal homepage. I'm a undergrauate student from Zhejiang university, Hangzhou, China, and my major is Opt-electrial engineering. My GPA in total is XX and XXX+XX for GRE general test and XX for TOFEL (XX speaking). 
 
-啦啦啦，这个页面还刚刚诞生，所以没什么内容~这几天抽空写点东西~
 
-### Markdown
+###  Experience 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
