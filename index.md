@@ -1,6 +1,6 @@
 ## Welcome to Yang's Pages
 
-This is my personal homepage. I'm a undergrauate student from Zhejiang university, Hangzhou, China, and my major is Opt-electrial engineering. My GPA in total is XX and XXX+XX for GRE general test and XX for TOFEL (XX speaking). 
+This is my personal homepage. I'm a undergrauate student from Zhejiang university, Hangzhou, China, and my major is Opt-electrial engineering. 
 
 
 ###  Experience 
