@@ -476,8 +476,8 @@ a.read_more:hover {
 ---------------------------------*/
 
 #service {
-    padding: 110px 0px;
-    background: #03A9F4;
+    padding: px 0px;
+    background: #0;
 }
 #service h2{
   color: #fff;
@@ -1035,7 +1035,7 @@ transition: all .3s;
 border: 1px solid #CE1139;
 }
 #aboutUs {
-    padding: 110px 0;
+    padding: 70px 0;
 }
 
 /* Contact
@@ -2162,11 +2162,11 @@ img {
 
 .card.hovercard .avatar {
     position: relative;
-    top: -80px;
+    top: -100px;
     width: 150px;
     height: 150px;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
     right: 0px;
     left: 0px;
     margin: 0 auto;
@@ -2183,14 +2183,14 @@ img {
 }
 
 .card.hovercard .info {
-    padding: 0 8px 22px;
-    top: -50px;
+    padding: 0 0px 0px;
+    top: -70px;
     position: relative;
 }
 
 .card.hovercard .info .title {
     margin-bottom: 10px;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 1;
     color: #ffffff;
     vertical-align: middle;
