@@ -1,0 +1,97 @@
+/* 
+------------------------------------
+
+Feb 2010
+Patrick Lynch
+Victor Velt
+Yale Web Team
+
+
+------------------------------------ */
+
+/* COLOR REFERENCES
+------------------------------------------------------------------------
+Yale blue:    #0F4D92 Yale web blue, touchstone for Yale web color schemes
+
+Dark blue: 	  #2E4A6E Yale Header at top, generic templates
+Dark blue:    #344461 header text
+Dark blue:    #415578 header areas
+Medium blue:  #8197c6 header areas
+Medium blue:  #b1c6f2 
+Medium blue:  #c4d5f1 
+Light blue:   #d2e1fa
+Light blue:   #e6eefb 
+Yellow:       #f0f0c9 Highlights; login button color
+Yellow:	      #fefec4
+
+*/
+
+body {
+	background: none;
+	}
+
+#pagebox {
+	border: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	}
+
+#yaleHeader, #itsLinksHeader, #itsLandingHeader {
+	display: none;
+	}
+
+#identityHeader {
+	height: auto;
+	background: #fff;
+	}
+
+#identityHeader img {
+	display: none;
+	}
+
+#identityHeader h1 {
+	text-indent: 0;
+	float: none;
+	height: auto;
+	font-size: 20px;
+	}
+
+#scanColumn, #sideBar {
+	display: none;
+	}
+
+#content, #mainColumn {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	}
+
+body.column2 #mainColumn { 
+	width: 100%;
+	}
+
+body.column2 ul#breadCrumb {
+	width: 100%;
+	}
+
+#pageAnchor {
+	display: none;
+	}
+
+#content {
+	margin-bottom: 50px;
+	}
+
+#footer {
+	clear: left;
+	background: #fff;
+	border-top: 1px solid #000;
+	border-bottom: none;
+	}
+
+#footer p.footer {
+	margin: 0;
+	}
+

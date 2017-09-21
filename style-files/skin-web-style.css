@@ -1,0 +1,375 @@
+/* 
+------------------------------------
+
+Jan 2010
+patrick lynch
+
+Sep 2017
+modified by Xiankai Sun
+
+------------------------------------ */
+
+/* COLOR REFERENCES
+------------------------------------------------------------------------
+Yale color set:
+Dark blue:    #2e4a6e Yale Header at top, generic templates
+Dark blue:    #344461 header text
+Dark blue:    #415578 header areas
+Medium blue:  #8197c6 header areas
+Medium blue:  #b1c6f2 
+Medium blue:  #c4d5f1 
+Light blue:   #d2e1fa
+Light blue:   #e6eefb 
+Yellow:       #f0f0c9 Highlights; login button color
+Yellow:       #fefec4
+
+CUHK color set:
+Purple:          #73216D
+Gold:            #DDA300
+Light yellow: #F4DFB4
+Black:           #221815
+*/
+
+
+body {
+	background-image: none;
+	background-color: #e9e9e9;
+	padding: 0;
+	margin: 0;
+	}
+
+
+
+
+#pageAnchor {
+	padding-bottom: 40px;
+	}
+	
+#pagebox {
+	border: none;
+	margin: 0px auto;
+	width: 900px;
+	padding: 0 12px;
+	background: #fff url(pagebox_shadow_bkgd.gif) repeat;
+	}
+
+#pageboxBottom {
+	width: 924px;
+	height: 12px;
+	margin: 0px auto;
+	padding-bottom: 2px;
+	background: transparent url(pagebox_shadow_bottom.gif) no-repeat;
+	}
+
+#yaleHeader {
+background-color: #73216D;
+/*background: url(style-yaleheader.gif);*/
+border: none;
+height: 36px;
+background-repeat: no-repeat;
+background-position: top left;
+}
+
+#yaleHeader #searchTools { /* sets up container box for links, search, and magic-y */
+padding-right: 5px;
+}
+
+#identityHeader {
+background-color: #F4DFB4;
+/*background: url(style-identityheader.gif);*/
+border: none;
+height: 86px;
+background-repeat: no-repeat;
+background-position: top left;
+}
+
+p.identityHeader {
+	color: #73216D;
+	padding: 16px 10px 0 10px;
+	text-align: center;
+	font-family: Cambria;
+	font-size: 140%;
+	}
+
+p.identityHeader a {
+	color: #fff;
+	}
+
+
+#itsLinksHeader {
+background: #2e65a2;
+background: url(style-linksheader.jpg);
+border-bottom: 1px solid #2e65a2;
+background-repeat: no-repeat;
+background-position: top left;
+}
+
+
+
+
+
+
+#footer { /* font styles below */
+width: 900px;
+clear: both;
+background: #F4DFB4;
+padding: 0;
+border: none;
+overflow: auto;
+height: 70px;
+}
+
+#footer img {
+display: block;
+float: left;
+}
+
+p.footer {
+	color: #000;
+	padding: 16px 10px 0 10px;
+	}
+
+p.footer a {
+	color: #fff;
+	}
+
+
+
+
+/* Custom content backgrounds, mostly on third-level menu pages
+------------------------------------------------------------------------ */
+#content { /* adds scan column line */
+	background: url(generic_content_bg.gif) no-repeat;
+	}
+
+#content.oboeAWD {
+	background: #fafae2 url(awd-flower-content-bg.gif) no-repeat;
+	}
+
+
+
+
+#maincolumn {
+	padding-left: 5px;
+	}
+
+/* for 2 column pages
+body.column2 #mainColumn { 
+float: left; 
+margin-top: 5px; 
+width: 690px;
+} */
+
+ul#breadcrumb { 
+	padding: 5px 5px;
+	}
+
+#gtsLink {
+	background-image: url(sc_gotosection_arrow_right.gif);
+	border: 1px solid #c8dcf6;
+	}
+
+
+
+
+
+/* Nav bar
+----------------------------------- */
+ul#navigationList {
+font-weight: normal;
+}
+
+ul#navigationList li ul {
+font-size: 11px;
+}
+
+ul#navigationList li li a {
+padding: 1px 8px 5px 28px;
+}
+
+#navigationShow.A01 li.menu01,
+#navigationShow.A02 li.menu02,
+#navigationShow.A03 li.menu03,
+#navigationShow.A04 li.menu04,
+#navigationShow.A05 li.menu05,
+#navigationShow.A06 li.menu06,
+#navigationShow.A07 li.menu07,
+#navigationShow.A08 li.menu08,
+#navigationShow.A09 li.menu09,
+#navigationShow.A10 li.menu10,
+#navigationShow.A11 li.menu11,
+#navigationShow.A12 li.menu12,
+#navigationShow.A13 li.menu13,
+#navigationShow.A14 li.menu14,
+#navigationShow.A15 li.menu15 {
+	/*background-color: #F4DFB4;*/
+	border-top: 1px solid #d8e1ed;
+	border-bottom: 1px solid #d8e1ed;
+	padding-bottom: 4px;
+	margin: 2px 0;
+	}
+
+#navigationShow.A05 li.menu05 a.highlight {
+	font-weight: bold;
+	}
+
+
+
+
+
+
+
+
+/* HEADER TABS
+--------------------------------------------- */
+#tabs {
+	width: 900px;
+	float: left;
+	background: #DDA300;
+	/*background: url(plain-tabsheader.jpg);*/
+	}
+
+#tabs ul {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0 0 0; /* sets amount of space above the tabs */
+	margin-left: 12px;
+	}
+
+#tabs ul li {
+display: inline;
+}
+
+#tabs ul li a {
+float: left;
+display: block;
+margin: 0 10px 0 0;
+padding: 6px 12px; /* note normal padding-bottom */
+color: #73216D;
+text-decoration: none;
+background: #F4DFB4;
+/*background: url(tabs_default_bg.gif) repeat-x top left;*/
+}
+
+#tabs ul li a:hover {
+color: #000;
+padding-bottom: 7px; /* set this to 1 or 2 px higher than normal padding-bottom */
+/* background: #bed6f7 url(on_bg.gif) repeat-x top left; */
+background: none;
+background-color: #dfebfc;
+}
+
+#tabs ul li a:active { color: #73216D; }
+
+/* Sets look for current Tab,
+   apply id to body tag to change tabs
+--------------------------------------------- */
+body.tab1 #t1 a,
+body.tab2 #t2 a,
+body.tab3 #t3 a,
+body.tab4 #t4 a,
+body.tab5 #t5 a,
+body.tab6 #t6 a {
+	color: #000;
+	padding-bottom: 7px; /* set this to 1 or 2 px higher than normal padding-bottom */
+	background: none;
+	background-color: #fff;
+	cursor: default;
+	}
+
+body.tab1 #t1 a:hover,
+body.tab2 #t2 a:hover,
+body.tab3 #t3 a:hover,
+body.tab4 #t4 a:hover,
+body.tab5 #t5 a:hover,
+body.tab6 #t6 a:hover {
+	background: none;
+	background-color: #fff;
+	}
+
+
+
+#tabs ul li#t4 a { 
+float: right;
+color: #00346a;
+background: #ede493 url(tabs_special_bg.gif) repeat-x top left;
+}
+
+#tabs ul li#t4 a:hover { 
+background: none;
+background-color: #f9f8c8;
+}
+
+#tabs ul li#t5 a { 
+float: right;
+color: #00346a;
+background: #ede493 url(tabs_default_bg.gif) repeat-x top left;
+}
+
+#tabs ul li#t5 a:hover { 
+background: none;
+background-color: #a3c5ea;
+}
+
+#tabs ul li#t6 a { 
+float: right;
+color: #00346a;
+background: #ede493 url(tabs_default_bg.gif) repeat-x top left;
+}
+
+#tabs ul li#t6 a:hover { 
+background: none;
+background-color: #a3c5ea;
+}
+
+
+/* Sets up tabsline 
+--------------------------------------------- */
+#tabsline {
+width: 900px;
+float: left;
+background-color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Definition list styles
+--------------------------------------------- */
+#content dl {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: #000;
+	margin: 0.3em 0em 0.7em 0em;
+	}
+	
+#content dl dt {
+	font-weight: bold;
+	color: #265791;
+	margin: 1.2em 0em 0.1em 0em;
+	}
+	
+#content dl dd {
+	color: #000;
+	margin: 0.3em 0em 0.1em 0em;
+	}
+
+/* Ordered list tweak
+--------------------------------------------- */
+ol {
+	line-height: 1.7em;
+	}
+
+	
+	
+	
+	
+

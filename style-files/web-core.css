@@ -1,0 +1,853 @@
+/* 
+------------------------------------
+
+Feb 2010
+Patrick Lynch
+Victor Velt
+Yale Web Team
+
+Sep 2017
+modified by Xiankai Sun
+
+------------------------------------ */
+
+/* COLOR REFERENCES
+------------------------------------------------------------------------
+Yale blue:    #0F4D92 Yale web blue, touchstone for Yale web color schemes
+
+Dark blue:    #2E4A6E Yale Header at top, generic templates
+Dark blue:    #344461 header text
+Dark blue:    #415578 header areas
+Medium blue:  #8197c6 header areas
+Medium blue:  #b1c6f2 
+Medium blue:  #c4d5f1 
+Light blue:   #d2e1fa
+Light blue:   #e6eefb 
+Yellow:       #f0f0c9 Highlights; login button color
+Yellow:       #fefec4
+
+CUHK color set:
+Purple:          #73216D
+Gold:            #DDA300
+Light yellow: #F4DFB4
+Black:           #221815
+*/
+
+
+
+/* =CORE GLOBAL STYLES
+======================================================================= */
+body {
+		background-color: #fff;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		margin: 5px;
+		padding: 5px;
+		}
+
+a {
+		color: #275897;
+		text-decoration: none;
+		}
+
+body.blank {
+		background: #fff;
+		}
+	
+a:link {
+	text-decoration: none;
+	}
+			
+a:visited {
+		text-decoration: none;
+		}
+			
+a:active {
+		text-decoration: none;
+		}
+			
+a:hover {
+		color: #9f7b00;   /*The orange color for hover*/
+		text-decoration: underline;
+		}
+		
+.hide	{
+		display: none;
+		}
+
+.clear-l {
+		clear: left;
+		}
+
+.clearer { /* clears both ways */
+		clear: both;
+		line-height: 0;
+		margin: 0;
+		padding: 0;
+		height: 1px;
+		}		
+
+
+
+/* =MAJOR LAYOUT IDs
+======================================================================= */
+
+/* =Page container and Headers
+------------------------------------------------------- */
+#pagebox {
+	border-bottom: 3px solid #000;
+	border-left: 1px solid #000;
+	border-right: 3px solid #000;
+	border-top: 1px solid #000;
+	margin: 0px auto;
+	width: 900px;
+	}
+
+#yaleHeader {
+	border-bottom: 1px solid #000;
+	height: 35px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#identityHeader {
+	border-bottom: 1px solid #000;
+	height: 85px;
+	clear: both;
+	margin: 0px auto;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#identityHeader h1 { /* hides heading text for screen */
+	float: left;
+	text-indent: -9999px;
+	font-size: 12px;
+	margin: 0;
+	height: 0;
+	}
+
+#identityHeader img {
+	display: block;
+	}
+
+#itsLinksHeader {
+	border-bottom: 1px solid #000;
+	height: 25px;
+	padding: 5px 10px 4px 10px;
+	}
+
+
+/* =Content and Footer areas
+------------------------------------------------------- */
+#scanColumn {  /* left side scan column */
+	/*background: #fff;*/
+	/* clear: right; */
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 160px;
+	}
+
+#content { /* container for content tables, columns */
+	background: #fff;
+	float: right;
+	width: 700px; 
+	padding: 10px 30px 10px 10px;
+	}
+	
+#content { /* minimum height for better browsers */
+	min-height: 620px;
+	height: auto !important;
+	height: 620px;
+	}
+	
+#mainColumn { /* for 3 column pages */
+	float: left; 
+	margin-top: 5px; 
+	padding-left: 5px;
+	width: 430px;
+	}
+
+#sideBar { /* for 3 column pages */
+	float: right; 
+	margin-top: 5px; 
+	width: 235px;
+	}
+
+#pageAnchor {
+	clear: both;
+	}
+	
+#pageAnchor img {
+	float: left;
+	padding: 5px 50px 10px 170px;
+	}
+
+#pageAnchor p { /* see more styles in typography */
+	float: left;
+	}
+
+#footer {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	clear: both;
+	padding: 5px 10px 15px 10px;
+	}
+	
+	
+
+/* =BODY CLASSES (override styles for different page layouts)
+======================================================================= */
+/* for 3 column pages */
+body.column3 ul#breadCrumb {
+width: 425px;
+}
+
+/* for 2 column pages */
+body.column2 #mainColumn { 
+float: left; 
+margin-top: 5px; 
+/* width: 700px; */
+/* width: 695px; */
+width: 690px;
+}
+
+body.column2 ul#breadCrumb {
+width: 690px;
+}
+
+/* for 1 column full width pages */
+body.column1 #content {
+float: none;
+width: auto;
+padding: 0px 15px 0px 15px;
+}
+
+body.column1 #mainColumn {
+width: 865px; 
+}
+
+body.column1 ul#breadCrumb {
+margin-top: 10px; 
+width: 865px;
+}
+
+body.column1 #pageAnchor img {
+padding-left: 20px;
+}
+
+
+/* for ITS home page */
+body.home #mainColumn,
+body.home #sideBar {
+background: #fff;
+margin-top: 0;
+padding-top: 0;
+}
+
+body.home ul#navigationList {
+	margin-top: 20px;
+	}
+
+
+
+/* =MINITABS LINKS HEADER
+============================================================ */
+
+#miniTabsBox { /* keeps list open in IE */
+	width: 700px;
+	float: right;
+	}
+
+ul#miniTabs {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-right: 5px;
+	}
+	
+ul#miniTabs li {
+	display: inline;
+	line-height: 11px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+ul#miniTabs a {
+	color: #fff;
+	float: left;
+	line-height: 11px;
+	margin: 6px 12px 0px 12px;
+	text-decoration: none;
+	}
+	
+ul#miniTabs a.active, #miniTabs a:hover {
+	border-bottom: 2px solid #eef0ae;
+	color: #F33;
+	padding-bottom: 1px;
+	}
+	
+ul#miniTabs a:hover {
+	color: #fff;
+	}
+
+
+
+/* =STANDARD YALE HEADER (tableless, generic colors)
+	Typographic styles are included here but can be
+	overridden in skin styles
+=============================================================== */
+
+/* Yale Header Set-up
+------------------------------------------------------ */
+#yaleHeader {
+background-color: #2e4a6e; /* standard color */
+border-bottom: 1px solid #000;
+float: left;
+width: 100%;
+}
+
+/* Phark IR */
+#yaleHeader h2 {  
+font-size: 12px;
+margin: 0;
+text-indent: -9999px;
+float: left;
+}
+
+#yaleHeader h2 a { /* makes the background a clickable link */
+display: block;
+width: 130px;
+height: 36px;
+}
+
+#yaleHeader #searchTools { /* sets up container box for links, search, and magic-y */
+float: right;
+padding-right: 15px;
+}
+
+/* =Calendar and A-Z Index links
+------------------------------------------------------ */
+ul#yaleHeaderLinks {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+line-height: 1.1em;
+padding: 0;
+margin: 12px 10px 0 0;
+float: left;
+}
+
+ul#yaleHeaderLinks li { 
+display: inline;
+}
+
+ul#yaleHeaderLinks li a {
+color: #fff;
+text-decoration: none;
+padding: 0px 10px;
+float: left;
+border-right: 1px solid #fff;
+}
+
+ul#yaleHeaderLinks li a:hover {
+text-decoration: underline;
+}
+
+ul#yaleHeaderLinks li.last a { 
+padding-right: 15px;
+border: none;
+}
+
+
+/* =Search Box
+------------------------------------------------------ */
+form#yaleHeaderSearch {
+float: left;
+margin: 0;
+margin-top: 6px; /* aligns vertical position */
+white-space: nowrap;
+}
+
+form#yaleHeaderSearch input.sfield {
+color: #999;
+font-size: 9pt; 
+line-height: 1.3em;
+width: 190px;
+margin: 0;
+vertical-align: middle;
+}
+
+form#yaleHeaderSearch input.gobutton {
+width: 28px;
+height: 21px;
+margin-left: 2px;
+vertical-align: middle;
+}
+
+#myContainer { /* sets up Magic-Y and button position */
+float: left;
+margin-left: 20px;
+margin-top: 7px; /* aligns vertical position */
+position: relative;
+}
+
+
+/* =MAGIC-Y MENU
+	Typographic styles are included here
+=============================================================== */
+
+/* =Magic-Y Menu
+   Works with togLyr Javascript for Yale QuickLinks
+------------------------------------------------------ */
+#my-wrapper {
+position: absolute; 
+text-align: left;
+top: 17px;
+right: 0px;
+width: 160px;
+}
+
+#my-button {
+display: block;
+margin-right: 10px;
+margin-top: 1px;
+}
+
+#my-menu {
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 5px 12px 0 12px;
+margin-top: 5px;
+position: absolute;
+left: -999em;
+z-index: 100;
+}
+
+#my-menu ul { 
+width: 134px;
+list-style-type: none; 
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+line-height: 1.2em;
+margin: 0; 
+padding: 0;
+margin-bottom: 20px;
+}
+
+#my-menu ul.lower {
+margin-bottom: 15px;
+}
+
+#my-menu ul li { 
+padding: 2px 0px 3px 0px;
+} 
+
+#my-menu ul a { color: #73216D; text-decoration: none; }
+#my-menu ul.lower a { color: #585858; text-decoration: none; }
+#my-menu ul a:hover { color: #2a85ee; text-decoration: none; }
+#my-menu ul a:active { color: #039; }
+
+
+
+/* =GATEWAYS MENU (goToSection)
+	First are the structural styles of the menu
+============================================================ */
+#goToSection {
+float: left;
+margin-top: 1px;
+width: 290px;
+}
+
+#goToSectionBox {
+display: block; 
+}
+
+#goToSectionBox {
+/* width: 380px; */
+margin-right: -30px;
+position: relative;
+top: -3px;
+z-index: 5;
+}
+
+#goToSectionBox div.inactive {
+/* width: 380px; */
+visibility: hidden;
+position: absolute;
+}
+
+#goToSectionBox div.active {
+/* width: 380px; */
+visibility: visible;
+position: absolute;
+padding: 5px;
+background-color:#fafafa;
+border: 1px solid #e4e4e7;
+border-right: 2px solid #999;
+border-bottom: 2px solid #999;
+margin-left: 5px;
+margin-top: 23px;
+}
+
+#goToSection h3 {
+margin: 0;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: normal;
+text-transform: none;
+}
+
+#gtsLink {
+display: block;
+background-image: url(../graphics/gotosection_arrow_right.gif);
+background-repeat: no-repeat;
+background-position: right;
+padding: 2px 20px 0px 5px;
+width: 110px;
+height: 18px;
+border: 1px solid #ccc;
+margin-left: 5px;
+color: #fff;
+position: absolute;
+z-index: 10;
+text-decoration: none;
+background-color: transparent;
+}
+
+a#gtsLink:hover,
+a#gtsLink.active {
+background-color: #fafafa;
+background-image: url(../graphics/gotosection_arrow_down.gif);
+border-bottom: none;
+border-color: #e4e4e5;
+color: #000;
+}
+
+/*  =GATEWAYS MENU (goToSection)
+	Presentational styles for the menus inside
+------------------------------------------------------ */
+#gtsLeftCol,
+#gtsMiddleCol,
+#gtsRightCol {
+float: left;
+width: 120px;
+margin-right: 10px;
+padding-top: 5px;
+}
+
+#gtsLeftCol {
+padding-left: 10px;
+}
+
+#gtsRightCol {
+margin-right: 0;
+}
+
+#gtsMiddleCol {
+/* border-right: 1px solid #ddd; */
+border-left: 1px solid #ddd;
+padding: 5px 0 50px 10px;
+}
+
+#goToSection ul {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+line-height: 1.2em;
+list-style-type: none;
+color: #006;
+margin: 0;
+padding: 0;
+}
+
+#goToSection .major {
+display: block;
+padding: 1px 0 2px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 4px;
+}
+
+#goToSection ul ul {
+font-weight: normal;
+}
+
+#goToSection li {
+padding-bottom: 0.5em;
+}
+
+
+
+/* =SCAN COLUMN MENU LIST
+	includes default font styles
+============================================================ */
+ul#navigationList {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #415578;
+	line-height: 1.2em;
+	margin: 40px 0 0 0;
+	padding: 0;
+	}
+
+ul#navigationList li {
+	list-style-type: none;
+	}
+
+ul#navigationList li a {
+	display: block;
+	padding: 5px 5px 5px 17px;
+	}
+
+ul#navigationList li.nada ul {
+	display: none;
+	}
+
+ul#navigationList li ul {
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	}
+
+ul#navigationList li li a {
+	padding: 1px 8px 1px 28px;
+	}
+	
+ul#navigationList a:link, ul#navigationList a:visited {
+	color: #2758b3;
+	}
+
+ul#navigationList a:hover {
+	color: #3380e6;
+	}
+
+/* li.sub1 a {
+background: url(../icons/sub_link.gif) no-repeat 20px 50%;
+} */
+
+ul#navigationList li a { /* fixes IE 6 */
+	height: 1%; 
+	}
+
+/* NAVIGATION MENUS &amp; SUBMENUS (1-15) 
+   This lets you add classes A1-A15 to the 
+   navigationShow div to toggle the submenus
+========================================================= */
+
+/* first you turn off all the nested child lists 
+--------------------------------------------------------- */
+ul#navigationList li.menu01 ul,
+ul#navigationList li.menu02 ul,
+ul#navigationList li.menu03 ul,
+ul#navigationList li.menu04 ul,
+ul#navigationList li.menu05 ul,
+ul#navigationList li.menu06 ul,
+ul#navigationList li.menu07 ul,
+ul#navigationList li.menu08 ul,
+ul#navigationList li.menu09 ul,
+ul#navigationList li.menu10 ul,
+ul#navigationList li.menu11 ul,
+ul#navigationList li.menu12 ul,
+ul#navigationList li.menu13 ul,
+ul#navigationList li.menu14 ul,
+ul#navigationList li.menu15 ul {
+display: none;
+}
+
+/* then you turn on a particlar child list
+   by adding a class to the navigationShow div
+--------------------------------------------------------- */
+#navigationShow.A01 li.menu01 ul,
+#navigationShow.A02 li.menu02 ul,
+#navigationShow.A03 li.menu03 ul,
+#navigationShow.A04 li.menu04 ul,
+#navigationShow.A05 li.menu05 ul,
+#navigationShow.A06 li.menu06 ul,
+#navigationShow.A07 li.menu07 ul,
+#navigationShow.A08 li.menu08 ul,
+#navigationShow.A09 li.menu09 ul,
+#navigationShow.A10 li.menu10 ul,
+#navigationShow.A11 li.menu11 ul,
+#navigationShow.A12 li.menu12 ul,
+#navigationShow.A13 li.menu13 ul,
+#navigationShow.A14 li.menu14 ul,
+#navigationShow.A15 li.menu15 ul { 
+display: block; 
+}
+
+/* then you style the particular parent and child list
+--------------------------------------------------------- */
+#navigationShow.A01 li.menu01,
+#navigationShow.A02 li.menu02,
+#navigationShow.A03 li.menu03,
+#navigationShow.A04 li.menu04,
+#navigationShow.A05 li.menu05,
+#navigationShow.A06 li.menu06,
+#navigationShow.A07 li.menu07,
+#navigationShow.A08 li.menu08,
+#navigationShow.A09 li.menu09,
+#navigationShow.A10 li.menu10,
+#navigationShow.A11 li.menu11,
+#navigationShow.A12 li.menu12,
+#navigationShow.A13 li.menu13,
+#navigationShow.A14 li.menu14,
+#navigationShow.A15 li.menu15 {
+background-color: #f5f5f5;
+border-top: 1px solid #e4e4e7;
+border-bottom: 1px solid #e4e4e7;
+padding-bottom: 4px;
+margin: 2px 0;
+}
+
+
+/* ====================================================== */
+/* ====================================================== */
+
+
+/*  =RESOURCES FOR - NAVIGATION LIST
+--------------------------------------------------------- */
+ul#resourcesFor {
+font-family: Verdana, Geneva, Arial, sans-serif;
+font-size: 11px;
+font-weight: normal;
+color: #415578;
+line-height: 1.2em;
+margin: 4px 0 0 0;
+padding: 0;
+}
+
+ul#resourcesFor li {
+list-style-type: none;
+}
+
+ul#resourcesFor li a {
+display: block;
+padding: 0px 0px 4px 17px;
+height: 1%; /* fixes IE 6 */
+}
+
+ul#resourcesFor a { 
+color: #585858;
+}
+
+
+
+/*  =SIDE BOX
+--------------------------------------------------------- */
+.sideBox {
+float: right; 
+width: 250px;
+padding: 0px 0px 0px 10px; 
+}
+
+
+
+/*  =TABLES WITH SKINNING
+--------------------------------------------------------- */
+table.skinned {
+border: solid #ccc;
+border-width: 1px 0 0 1px;
+border-collapse: collapse;
+font-size: 1.1em;
+color: #000;
+}
+
+table.skinned th, table.skinned td {
+border: solid #ccc;
+border-width: 0 1px 1px 0;
+padding: 4px;
+vertical-align: top;
+}
+
+table.skinned th {
+background-color: #e8eddd;
+text-align: center;
+color: #53662e;
+}
+
+table.skinned caption {
+font-weight: bold;
+color: #53662e;
+padding: 4px 0 5px 0;
+border: solid #ccc;
+border-width: 1px 1px 0 1px;
+}
+
+table.skinned td.td-highlight-1 {
+background-color: #e8eddd;
+}
+
+table.skinned td.td-highlight-2 {
+background-color: #f0f4fa;
+}
+
+table.skinned td.td-highlight-3 {
+background-color: #ffe;
+}
+
+table.skinned tr.stripe1 { 
+background-color:#fff; 
+}
+
+table.skinned tr.stripe2 { 
+background-color:#edf3fe; 
+}
+
+
+
+/*  =TOGGLED STYLES
+	 for nested tables &amp; definition lists inside
+	 skinned tables
+--------------------------------------------------------- */
+table.toggled {
+border-top: 1px dashed #ddd;
+background-color: #ffe;
+margin-bottom: 5px;
+}
+
+table.toggled dl {
+margin: 5px 10px 10px 10px;
+}
+
+table.toggled dl dt {
+font-weight: bold;
+color: #53662e;
+margin-left: 0.5em;
+}
+
+table.toggled dl dd {
+margin: 0.2em 2em 0.7em 0.5em;
+color:#666;
+}
+
+
+
+/*  =INTERNAL PAGE LINKS BOX
+	sets up container for jump links in internal pages
+--------------------------------------------------------- */
+#internalPageLinksBox {
+	border-bottom: 1px solid #bbb;
+	overflow: auto; /* clears floated elements */
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	zoom: 1; /* for freakin IE, what else? Note: This IE-specific property will cause W3C CSS validation errors */
+	}
+
+#internalPageLinksBox ul.plainIndented {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding-left: 5px;
+	width: 215px;  /* default is 215 in ITS site */
+	}
+	
+#internalPageLinksBox ul.plain {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding-left: 5px;
+	width: 215px;  /* default is 215 in ITS site */
+	}
+
+
+

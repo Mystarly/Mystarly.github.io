@@ -1,0 +1,984 @@
+/* 
+------------------------------------
+
+Feb 2010
+Patrick Lynch
+Victor Velt
+Yale Web Team
+
+
+------------------------------------ */
+
+/* COLOR REFERENCES
+------------------------------------------------------------------------
+Yale blue:    #0F4D92 Yale web blue, touchstone for Yale web color schemes
+
+Dark blue: 	  #2E4A6E Yale Header at top, generic templates
+Dark blue:    #344461 header text
+Dark blue:    #415578 header areas
+Medium blue:  #8197c6 header areas
+Medium blue:  #b1c6f2 
+Medium blue:  #c4d5f1 
+Light blue:   #d2e1fa
+Light blue:   #e6eefb 
+Yellow:       #f0f0c9 Highlights; login button color
+Yellow:	      #fefec4
+
+*/
+
+
+
+/*	CONTENTS OF THIS SHEET:
+-------------------------------------------------------
+	Body &amp; content misc.
+	Headings
+	Paragraphs
+	Semantic markup
+	Lists
+		Ordered
+		Unordered
+	Tables
+	Table typography specifics
+	
+	*/
+
+
+
+
+/*  BODY &amp; CONTENT MISC.
+-------------------------------------------------------------------------------------------------------------- */
+
+
+
+.hidden {
+	display: none;
+	}
+	
+#content {
+	font-size: 62.5%;
+	}
+	
+	
+/* HORIZONTAL RULES
+-------------------------- */
+hr {
+	margin: 3em 0em 2em 0em;
+	padding: 0;
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid #c7daf2;
+	}
+
+hr.tight {
+	margin: 1em 0em 1em 0em;
+	padding: 0;
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid #c7daf2;
+	}
+	
+	
+hr.veryTight {
+	margin: 0em 0em 0em 0em;
+	padding: 0;
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid #c7daf2;
+	}
+
+
+
+
+
+
+
+ 
+/*  HEADINGS
+-------------------------------------------------------------------------------------------------------------- */
+
+#content h1 a:hover,
+#content h2 a:hover, 
+#content h3 a:hover, 
+#content h4 a:hover {
+	color: #36c;
+	text-decoration: underline;
+	}
+
+#content h1 {
+	color: #344461;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.7em;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 1em 0em 0em 0em;
+	}
+
+#content h2 {
+	color: #344461;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 1em 0em 0em 0em;
+	}
+	
+#content h2.mainMenu a {
+	font-size: .95em;
+	color: #265791;
+	}
+
+#content h2.relatedLinks {
+	color: #344461;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 1em 0em .4em 0em;
+	padding: 0px 0px 2px 0px;
+	border-bottom: 1px solid #556e9b;
+	}
+	
+#yaleHeader h2 {  
+	background: transparent url(skin_graphics/yale_alt_header.gif) no-repeat;
+	}
+
+#content h3 {
+	color: #344461;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 1.4em;
+	margin: 1em 0em 0em 0em;
+	}
+
+#content h4 {
+	color: #344461;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.1em;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 1.4em;
+	margin: 1em 0em 0em 0em;
+	}
+	
+#content h4.nav-links { /* Used for the "Related links" lists in right columns */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1.2em;
+	color: #585858;
+	margin: 20px 15px 10px 15px;
+	}
+
+	
+#content h5 {
+	color: #000;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1em;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 1em 0em 0em 0em;
+	}
+	
+#content h6 {
+	color: #000;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1.4em;
+	margin: 1em 0em 0em 0em;
+	}
+
+
+
+
+
+
+	
+	
+
+/*  PARAGRAPHS
+-------------------------------------------------------------------------------------------------------------- */
+
+#content p  {
+	color: #000;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	margin: 0.3em 0em 0.7em 0em;
+	}
+
+
+#content p.caption  {
+	color: #2C5999;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.6em;
+	margin: 0.3em 0em 0.3em 0em;
+	}
+	
+p.scanColumnText  {
+		font-family: Verdana, Geneva, Arial, sans-serif;
+		font-size: 10px;
+		line-height: 1.4em;
+		color: #415578;
+		margin: 20px 0px 0px 15px;
+		text-align: left;
+		}
+	
+#content p.serif {
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 1.2em;
+	line-height: 1.7em;
+	color: #222;
+	}
+
+	
+#content p.sideBar {
+	color: #444;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.6em;
+	margin: 0.3em 0em 0.3em 0em;
+	}
+	
+p.footer {
+		color: #000099;
+		font-family: Verdana, Geneva, Arial, sans-serif;
+		font-size: 10px;
+		line-height: 1.6em;
+		margin: 0px 0px 0px 160px;
+		padding: 0em 0em 0em 0em;
+		}
+	
+body.column1 p.footer {  /* for single column wide pages that have body class column1 */
+		margin-left: 5px;
+		}
+
+#pageAnchor p {   /* Outside the normal "content" div; Used for the "Last modified" dates */
+		float: left;
+		color: #666;
+		font-family: Verdana, Geneva, Arial, sans-serif;
+		font-size: 10px;
+		line-height: 1.2em;
+		margin-top: 6px;
+		margin-bottom: 0;
+		}
+		
+
+
+
+
+/*  SEMANTIC TAGS
+-------------------------------------------------------------------------------------------------------------- */
+
+ #content abbreviation {
+ 	font-style: normal;
+ 	}
+ 
+ #content address {
+ 	font-style: normal;
+ 	}
+ 
+ #content blockquote {
+ 	color: #323232;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	margin: .3em 0em 1.2em 2em;
+ 	}
+ 
+ #content cite {
+ 	font-style: italic;
+ 	}
+ 
+ #content code {
+ 	color: #344461;
+ 	display: inline;
+	font-family: Courier, "Courier New", sans-serif;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	margin: .3em 0em 1.2em 2em;
+ 	}
+ 	
+ #content dfn {
+ 	font-style: italic;
+ 	}
+ 	
+ #content emphasis {
+ 	font-style: italic;
+ 	}
+ 
+ #content pre {   /* Prevents layout disasters from careless use */
+	display: none;
+ 	}
+ 	
+ #content strong {
+ 	font-weight: bold;
+ 	}
+ 
+ 
+ 
+ 	
+ 	
+
+
+
+/*  LISTS
+
+Ordered lists
+Unordered lists
+Breadcrumb trail lists
+
+Note: The special list for left column navigation called "ul#navigationList" is defined in web-core.css,
+as are the horizontal header and tab navigation lists.
+
+-------------------------------------------------------------------------------------------------------------- */
+
+
+/*  Ordered list default
+----------------------------- */
+#content ol { 
+	color: #444;
+	/*color: #435A7A;*/
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: .4em 0em .2em -.4em;
+	text-indent: 0em;
+	}
+	
+#content ol li {
+	padding: 0em 0em 0.8em 0em;
+	}
+	
+
+/* these styles added to fix problems with nested lists */
+#content ol ol {
+	list-style-type: lower-alpha;
+	padding: 0;
+	margin: .4em 0em 0em 2em;
+	}
+	
+#content ol ol li {
+	padding: 0;
+	}
+
+/* fixes font size in nested lists */
+#content ol * {
+	font-size: 100% !important; /* IE needs !important */
+	line-height: 1.4em !important; /* IE needs !important */
+	}
+	
+
+
+
+/*  Unordered list default
+----------------------------- */
+#content ul { 
+	color: #444;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	list-style: square;
+	margin: .4em 0em .2em 0em;
+	text-indent: 0em;
+	}
+	
+#content ul li {
+	padding-bottom: 0.8em;
+	}
+	
+
+/* these styles added to fix problems with nested lists */
+#content ul ul {
+	padding: 0;
+	margin: .2em 0em 0em 2em;
+	}
+	
+#content ul ul li {
+	padding: 0;
+	}
+
+/* fixes font size in nested lists */
+#content ul * {
+	font-size: 100% !important; /* IE needs !important */
+	line-height: 1.4em !important; /* IE needs !important */
+	}
+	
+	
+
+/*  Unordered list "plain" for navigation lists, no ident
+----------------------------- */
+#content ul.plain { 
+	color: #444;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	list-style: none;
+	margin: .4em 0em .2em 0em;
+	padding: 0em 0em 0em 0em;
+	text-indent: 0em;
+	}
+	
+#content ul.plain li {
+	padding-bottom: 0.8em;
+	}
+	
+
+/* these styles added to fix problems with nested lists */
+#content ul.plain ul {
+	list-style-type: none;
+	padding: 0;
+	margin: .2em 0em 0em 2em;
+	}
+	
+#content ul.plain ul li {
+	list-style-type: none;
+	padding: 0;
+	}
+
+/* fixes font size in nested lists */
+#content ul.plain * {
+	font-size: 100% !important; /* IE needs !important */
+	line-height: 1.4em !important; /* IE needs !important */
+	}
+	
+
+
+		
+/* Plain gray lists ala the Blue Site, indented
+----------------------------------------- */
+#content ul.plainIndented { 
+	color: #444;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	list-style: none;
+	margin: .4em 0em .2em 1.4em;
+	padding: 0em 0em 0em 0em;
+	text-indent: 0em;
+	}
+	
+#content ul.plainIndented li {
+	padding-bottom: 0.8em;
+	}
+	
+
+/* these styles added to fix problems with nested lists */
+#content ul.plainIndented ul {
+	list-style-type: none;
+	padding: 0;
+	margin: .4em 0em 0em 2em;
+	}
+	
+#content ul.plainIndented ul li {
+	list-style-type: none;
+	padding: 0;
+	}
+
+/* fixes font size in nested lists */
+#content ul.plainIndented * {
+	font-size: 100% !important; /* IE needs !important */
+	line-height: 1.4em !important; /* IE needs !important */
+	}
+	
+	
+#content ul.plainIndented li a:hover {
+	color: #9f7b00;
+	}
+	
+
+
+
+
+/* Definition list styles
+--------------------------------------------- */
+#content dl {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: #000;
+	margin: 0.3em 0em 0.7em 0em;
+	}
+	
+#content dl dt {
+	font-weight: bold;
+	color: #265791;
+	margin: 1.2em 0em 0.1em 0em;
+	}
+	
+#content dl dd {
+	color: #000;
+	margin: 0.3em 0em 0.1em 0em;
+	}
+
+
+
+
+
+/*  LISTS, cont'd. Special lists for navigation, horizontal lists, etc.
+------------------------------------------------------- */
+
+
+/*  Breadcrumb List
+----------------------------- */
+ul#breadCrumb {
+	list-style-type: none;
+	padding: 6px 5px;
+	margin: 0;
+	float: left;
+	/* width: 100%; 
+	The width of the breadCrumb list must be set in the 
+	body classes in order to display properly in Dreamweaver
+	*/
+	}
+
+ul#breadCrumb li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 1.2em;
+	padding: 0 6px;
+	display: inline;
+	color: #333;
+	border-left: 1px solid #333;
+	float: left; /* keeps list items flush together */
+	}
+
+ul#breadCrumb li.bcfirst {
+	border: none;
+	padding-left: 0;
+	}
+
+
+/*  For example breadcrumb trails
+----------------------------- */
+ul.breadCrumb {
+	list-style-type: none;
+	padding: 6px 5px;
+	margin: 0;
+	float: left;
+	/* width: 100%; 
+	The width of the breadCrumb list must be set in the 
+	body classes in order to display properly in Dreamweaver
+	*/
+	}
+
+ul.breadCrumb li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 1.2em;
+	padding: 0 6px;
+	display: inline;
+	color: #333;
+	border-left: 1px solid #333;
+	float: left; /* keeps list items flush together */
+	}
+
+ul.breadCrumb li.bcfirst {
+	border: none;
+	padding-left: 0;
+	}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/*  TABLES
+-------------------------------------------------------------------------------------------------------------- */
+	
+
+/*  Table - Default values
+---------------------------------------------------------- */
+#content table {
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-bottom: 1.2em;
+	width: 100%;
+	}
+
+#content table {
+	border: none;
+	/*border: 1px solid #ccc;*/
+	}
+
+#content table caption {
+	text-align: left;
+	font-weight: bold;
+	color: #369;
+	padding: .4em 0em .2em 0em;
+	margin: 0em 0em .5em 0em;
+	border-bottom: 1px solid #a3b8cc;
+	}
+
+#content table th {
+	color: #333;
+	padding: .2em 0em .3em .5em;
+	text-align: left;
+	}
+	
+#content td {
+	border: none;
+	vertical-align: top;
+	padding: .6em .5em .6em .5em;
+	text-align: left;
+	}
+	
+#content td.divider {
+	border-bottom: 1px solid #ccc;
+	height: 1px;
+	}
+	
+
+/*  "Tight" variant of default table style
+----------------------------- */
+#content table.tight {
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-bottom: 1.2em;
+	width: 100%;
+	}
+
+#content table.tight {
+	border: none;
+	/*border: 1px solid #ccc;*/
+	}
+
+#content table.tight caption {
+	text-align: left;
+	font-weight: bold;
+	color: #369;
+	padding: .4em 0em .2em 0em;
+	margin: 0em 0em .5em 0em;
+	border-bottom: 1px solid #a3b8cc;
+	}
+
+#content table.tight th {
+	color: #333;
+	padding: .2em 0em .3em .5em;
+	text-align: left;
+	}
+	
+#content table.tight td {
+	border: none;
+	vertical-align: top;
+	padding: .3em .5em .3em .5em;
+	text-align: left;
+	}
+	
+#content table.tight td.divider {
+	border-bottom: 1px solid #ccc;
+	height: 1px;
+	}
+	
+
+
+
+
+/*  Table - Ruled
+---------------------------------------------------------- */
+
+#content table.ruled {
+	padding: 1em 0em 2em 0em;
+	}
+	
+#content table.ruled th {
+	border: 1px solid #a3b8cc;
+	border-width: 0px 0px 1px 0px;
+	padding: .6em .4em .3em 0em;
+	vertical-align: top;
+	}
+	
+#content table.ruled td {
+	border: 1px solid #ccd9e5;
+	border-width: 0px 0px 1px 0px;
+	padding: .8em 2.5em .8em 0em;
+	vertical-align: top;
+	}
+
+#content table.ruled th {
+	text-align: left;
+	color: #333;
+	}
+
+#content table.ruled caption {
+	border: 0px;
+	}
+
+
+/*  Table - Ruled tight
+----------------------------- */
+#content table.ruledTight {
+	font-size: 10px;
+	}
+
+#content table.ruledTight th {
+	font-size: 10px;
+	border: 1px solid #a3b8cc;
+	border-width: 0px 0px 1px 0px;
+	padding: .6em .4em .3em .4em;
+	vertical-align: top;
+	}
+	
+#content table.ruledTight td {
+	border: 1px solid #ccd9e5;
+	border-width: 0px 0px 1px 0px;
+	padding: .3em .4em .3em .4em;
+	vertical-align: top;
+	}
+
+#content table.ruledTight th {
+	text-align: left;
+	color: #555;
+	}
+
+#content table.ruledTight caption {
+	border: 0px;
+	}
+
+
+
+
+
+
+
+/*  Table - Grid
+---------------------------------------------------------- */
+#content table.grid {
+	border: solid #a3b8cc;
+	border-width: 1px 0 0 1px;
+	border-collapse: collapse;   /*separate, inherit*/
+	}
+
+#content table.grid th, td {
+	border: 1px solid #ccc;
+	border-width: 1px 1px 1px 1px;
+	padding: 1em .4em 1em .4em;
+	vertical-align: top;
+}
+
+#content table.grid th, #content table.grid td {
+	padding: .7em .4em .7em .4em;
+	border: solid #a3b8cc;
+	border-width: 0 1px 1px 0;
+	}
+
+table.grid th {
+	background-color: #fafae8;
+	}
+
+#content table.grid caption {
+	border: 0px;
+	}
+
+
+
+/*  Table - Grid tight
+----------------------------- */
+#content table.gridTight {
+	border: solid #a3b8cc;
+	border-width: 1px 0 0 1px;
+	border-collapse: collapse;   /*separate, inherit*/
+	}
+
+#content table.gridTight th, td {
+	border: 1px solid #ccc;
+	border-width: 1px 1px 1px 1px;
+	padding: 1em .4em 1em .4em;
+	vertical-align: top;
+}
+
+#content table.gridTight th, #content table.gridTight td {
+	padding: .4em .4em .4em .4em;
+	border: solid #a3b8cc;
+	border-width: 0 1px 1px 0;
+	}
+
+table.gridTight th {
+	background-color: #fafae8;
+	}
+
+#content table.gridTight caption {
+	border: 0px;
+	}
+
+
+
+
+
+
+
+
+
+	
+/*  Zebra stripe row classes
+These row class definition work for all types of tables to apply "zebra stripes"
+---------------------------------------------------------- */
+
+#content table td.td-highlight-1 {     /*  */
+	background-color: #fffcc3;
+	}
+
+#content table td.td-highlight-2 {     /*  */
+	background-color: #dfe7c1;
+	}
+
+#content table td.td-highlight-3 {     /*  */
+	background-color: #d2dcec;
+	}
+
+#content table tr.stripe1 {     /* WHITE STRIPE */
+	background-color: #fff; 
+	}
+
+#content table tr.stripe2 {     /* GRAY STRIPE */
+	background-color: #f6f6f6; 
+	}
+
+#content table tr.stripe3 {     /* GREEN STRIPE */
+	background-color: #ecfae9; 
+	}
+
+#content table tr.stripe4 {     /* BLUE STRIPE */
+	background-color: #e9effa; 
+	}
+
+#content table tr.stripe5 {     /* YELLOW STRIPE */
+	background-color: #fafae8; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Table - Grid
+---------------------------------------------------------- */
+#content table.grid {
+	border: solid #a3b8cc;
+	border-width: 1px 0 0 1px;
+	border-collapse: collapse;   /*separate, inherit*/
+	}
+
+#content table.grid th, td {
+	border: 1px solid #ccc;
+	border-width: 1px 1px 1px 1px;
+	padding: 1em .4em 1em .4em;
+	vertical-align: top;
+}
+
+#content table.grid th, #content table.grid td {
+	padding: .7em .4em .7em .4em;
+	border: solid #a3b8cc;
+	border-width: 0 1px 1px 0;
+	}
+
+table.grid th {
+	background-color: #fafae8;
+	}
+
+#content table.grid caption {
+	border: 0px;
+	}
+
+
+
+
+
+
+/*  Table - colorSets - For color swatches
+---------------------------------------------------------- */
+
+#content table.colorSets {
+	border-collapse: separate;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 1em;
+	color: #333;
+	padding: 1em 0em 0em 0em;
+	width: 100%;
+	}
+
+#content table.colorSets {
+	border: none;
+	}
+
+#content table.colorSets caption {
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	}
+	
+#content table.colorSets th {
+	color: #333;
+	padding: 0em 0em 0em 0em;
+	text-align: left;
+	}
+	
+#content table.colorSets td {
+	border: 1px solid #333;
+	line-height: 1.3em;
+	vertical-align: top;
+	padding: .6em .6em .6em .6em;
+	}
+	
+
+#content table.colorSets caption {
+	text-align: left;
+	font-weight: bold;
+	color: #369;
+	padding: .4em 0em .2em 0em;
+	margin: 0em 0em .5em 0em;
+	}
+	
+	
+	
+	
+
+
+/*  STUFF TO GET RID OF LATER
+-------------------------------------------------------------------------------------------------------------- */
+/*
+
+ul.internallist li a:hover {
+color: #36c;
+text-decoration: underline;
+}
+
+#content ul li a {
+	color: #585858;
+	text-decoration: none;
+}
+
+#content ul li a:hover {
+color: #36c;
+text-decoration: underline;
+}
+
+#content ul li {
+	padding-bottom: .5em;
+}
+
+
+
+
+
+
+
+*/
