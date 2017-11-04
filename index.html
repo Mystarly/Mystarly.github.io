@@ -3,14 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <!-- =========================================================================== -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
 <title>Xiankai Sun Group @ CUHK</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -19,22 +11,36 @@
 <meta name="Description" content="Meta-tag placeholder=description"/>
 <meta name="Keywords" content="Meta-tag placeholder=keywords"/>
 
+<link rel="stylesheet" type="text/css" media="all" href="style-files/swiper.min.css" />
 <link rel="stylesheet" type="text/css" media="all" href="style-files/web-core.css" />
 <link rel="stylesheet" type="text/css" media="all" href="style-files/web-typography.css" />
 <link rel="stylesheet" type="text/css" media="print" href="style-files/web-print.css" />
 <link rel="stylesheet" type="text/css" media="all" href="style-files/skin-web-style.css" />
-
+    <style type="text/css">
+        .swiper-container,
+        .swiper-container img{
+            width: 530px;
+        }
+        .swiper-pagination-bullet-active{
+            background: #ffffff;
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+            height: 30px;
+        }
+    </style>
+<script src="style-files/swiper.min.js" type="text/javascript"></script>
 <script src="style-files/scripts.js" type="text/javascript"></script>
-
 </head>
 
 
 <!-- =========================================================================== -->
-<!-- BODY:  Apply classes to the body tag for different layouts, these classes
-      change the widths of the layout divs.
+<!-- BODY:	Apply classes to the body tag for different layouts, these classes
+			change the widths of the layout divs.
 ================================================================================ -->
 <body class="tab1 column2">
 <a name="top_of_page" id="top_of_page"></a>
+
 
 
 <div id="pagebox">
@@ -106,15 +112,18 @@
 
 
 
+
+
+
 <!-- =========================================================================== -->
 <div id="tabs">
 
 <!-- ### INCLUDE: site_includes/headertabs.html ################################## -->
 <!-- ### INCLUDE: site_includes/headertabs.html ################################## -->
 <ul>
-    <li id="t1"><a href="index.html"  onclick="javascript: pageTracker._trackPageview('/web-header-tab/web-home');">Sun Group</a></li>
-    <li id="t2"><a href="home.html"  onclick="javascript: pageTracker._trackPageview('/web-header-tab/web-home');">Xiankai Sun</a></li>
-    <li id="t3"><a href="http://teamup.com/ksb5f01ab85463300b/"  target="_blank"  onclick="javascript: pageTracker._trackPageview('/web-header-tab/tools-and-references');">Group Calendar</a></li>
+		<li id="t1"><a href="index.html"  onclick="javascript: pageTracker._trackPageview('/web-header-tab/web-home');">Sun Group</a></li>
+		<li id="t2"><a href="home.html"  onclick="javascript: pageTracker._trackPageview('/web-header-tab/web-home');">Xiankai Sun</a></li>
+		<li id="t3"><a href="http://teamup.com/ksb5f01ab85463300b/"  target="_blank"  onclick="javascript: pageTracker._trackPageview('/web-header-tab/tools-and-references');">Group Calendar</a></li>
 </ul>
 <!-- ### INCLUDE: site_includes/headertabs.html ################################## -->
 <!-- ### INCLUDE: site_includes/headertabs.html ################################## -->
@@ -205,12 +214,28 @@
 <div id="mainColumn">
 
 
+
+
+
 <!-- Below is Xiankai Sun's Input -->
 
-<h1><a href="http://goo.gl/MJXeNg" target="_blank"><img src="photos/QR_code_200px.png" align="right" height="140"></a><b>Photonic & Optomechanical Nanodevice Laboratory at CUHK</b></h1>
+<h1 style="margin: 17px 0px 10px 0px;"><a href="http://goo.gl/MJXeNg" target="_blank"><img src="photos/QR_code_200px.png" align="right" height="140"></a><b>Photonic & Optomechanical Nanodevice Laboratory at CUHK</b></h1>
 <!-- the QR code can be generated at https://www.the-qrcode-generator.com/ -->
-           
 
+<div align="left">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="photos/sungroup.jpg" title="Sun Group, Nov 2016"/></div>
+            <div class="swiper-slide"><img src="photos/OPN_news.jpg" title="Sun Group, Nov 2016"/></div>
+            <div class="swiper-slide"><img src="photos/ECS_2015.jpg" title="Sun Group, Nov 2016"/></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+</div>
 
     <h1><a style="color:red">Current Openings</a></h1>
       <p><ol>
@@ -241,7 +266,14 @@
 
 <!-- Above is Xiankai Sun's Input -->
 
+
+
+
 <p style="margin-top: 35px;">&nbsp;</p>
+
+
+
+
 
 <!-- 
 <p style="color: #bbb;">For testing only:</p>
@@ -268,9 +300,21 @@
 <div id="pageAnchor">
 <a href="#top_of_page">
 <img src="style-files/jump.gif" alt="Jump to top." width="19" height="13" hspace="0" border="0" /></a>
-<p>Last updated: 19 Sep 2017</p>
+<p>Last updated: 18 Jul 2017</p>
 </div><!-- close pageAnchor div  -->
 <!-- =========================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- START OF FOOTER DIV
 ================================================================================ -->
@@ -301,7 +345,21 @@ pageTracker._trackPageview();
 } catch(err) {}
 </script>
 <!-- /GA CODE for www.yale.edu/web, created Jan 13, 2010 ============== -->
+<script type="text/javascript">
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay : 3000,
+        speed: 1000,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationClickable :true
 
+
+    })
+</script>
 
 
 <!-- ### INCLUDE: site_includes/web-footer.html ########################################### -->
@@ -314,20 +372,14 @@ pageTracker._trackPageview();
 
 </div><!-- close pagebox div -->
 <div id="pageboxBottom"></div>
-
-
-
 <!-- =========================================================================== -->
 <!-- =========================================================================== -->
 
 
 
 
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
 
 </body>
 </html>
