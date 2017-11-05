@@ -21,6 +21,7 @@
         .swiper-container img{
             width: 530px;
             display: block;
+            cursor: pointer;
         }
         .swiper-pagination-bullet-active{
             background: #ffffff;
@@ -359,7 +360,7 @@
 
 
 
-
+<script type="text/javascript" src="style-files/jquery-2.1.4.js"></script>
 <!-- GA CODE for www.yale.edu/web, created Jan 13, 2010 =============== -->
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -383,9 +384,12 @@ pageTracker._trackPageview();
         // 如果需要分页器
         pagination: '.swiper-pagination',
         paginationClickable :true
-
-
     })
+    $(".swiper-container").hover(function(){
+        mySwiper.stopAutoplay();
+    },function(){
+        mySwiper.startAutoplay();
+    });
 </script>
 
 
